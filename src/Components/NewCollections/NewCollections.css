@@ -3,7 +3,8 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    min-height: 90vh; /* mínimo pantalla, pero puede ser más si hace falta */
+    min-height: 90vh; /* mínimo pantalla, pero puede ser más si hace falta, para solucionar problemas de solapamiento  - NO INCLUIDO EN EL VIDEO */
+    margin-bottom: 150px; /* incluído para darle espacio con NewsLetter - NO INCLUIDO EN EL VIDEO */
 }
 
 .new-collections h1{
