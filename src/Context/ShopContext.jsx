@@ -1,4 +1,4 @@
-import React, { createContext, useContext } from "react";
+import React, { createContext, useContext, useState } from "react";
 import all_product from "../Components/Assets/all_product";
 import { isRouteErrorResponse } from "react-router-dom";
 
@@ -15,7 +15,7 @@ const getDefaultCart = () => {
 };
 
 const ShopContextProvider = (props) => {
-  const [cartItems, setCartItems] = useContext(getDefaultCart());
+  const [cartItems, setCartItems] = useState(getDefaultCart());
   // const contextValue = { all_product, cartItems };
 
   const addToCart = (itemId) => {
